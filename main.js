@@ -13,5 +13,24 @@ $(document).ready(function () {
     // $(".hamburger-menu").css("display", "none"); //alt method
   })
 
+  // source https://www.sitepoint.com/javascript-media-queries/
+  /* JavaScript Media Queries */
+  if (matchMedia) {
+    const mq = window.matchMedia("(min-width: 1000px)");
+    mq.addListener(WidthChange);
+
+    WidthChange(mq);
+  }
+
+  // media query change
+  function WidthChange(mq) {
+
+    if (mq.matches) {
+      $(".hamburger-menu").hide();
+    }
+
+  }
+
+
 
 })
