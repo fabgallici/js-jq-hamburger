@@ -84,6 +84,10 @@ header {
     font-size: 35px;
     text-decoration: none;
 }
+.blockD {
+    display: block;
+}
+
 @media screen and (max-width: 1000px)
 {
     .header-right ul {
@@ -100,5 +104,11 @@ header {
 
     .hamburger-menu.active {
         display: block;
+    }
+}
+/*aggiunta per far scomparire hamb-menu */
+@media screen and (min-width: 1000px) {
+    .hamburger-menu {
+        display: none;
     }
 }
