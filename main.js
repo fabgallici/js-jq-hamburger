@@ -10,7 +10,8 @@ $(document).ready(function () {
   //al click icona chiusura, cambio display in none di hamb-menu
   $(".close").click(function() {
 
-    $(".hamburger-menu").hide();
+    $(".hamburger-menu").removeClass("blockD");
+    // $(".hamburger-menu").hide();
     // $(".hamburger-menu").css("display", "none"); //alt method
   })
 
