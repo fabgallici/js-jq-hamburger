@@ -4,13 +4,15 @@ $(document).ready(function () {
 
     // $(".hamburger-menu").show(100);   //aggiunge display block inline sovrascrivendo eventuali mq css
     // $(".hamburger-menu").css("display", "block");  //alt method
-    $(".hamburger-menu").addClass("blockD"); //aggiungendo classe css eventualmente dopo con mq css posso sovrascriverla
+    // $(".hamburger-menu").addClass("blockD"); //aggiungendo classe css eventualmente dopo con mq css posso sovrascriverla
+    $(".hamburger-menu").addClass("active");
   });
 
   //al click icona chiusura, cambio display in none di hamb-menu
   $(".close").click(function() {
 
-    $(".hamburger-menu").removeClass("blockD");
+    // $(".hamburger-menu").removeClass("blockD");
+    $(".hamburger-menu").removeClass("active");
     // $(".hamburger-menu").hide();
     // $(".hamburger-menu").css("display", "none"); //alt method
   })

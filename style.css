@@ -84,6 +84,7 @@ header {
     font-size: 35px;
     text-decoration: none;
 }
+/* add for test */
 .blockD {
     display: block;
 }
@@ -107,7 +108,7 @@ header {
         display: block;
     }
 }
-/*aggiunta per far scomparire hamb-menu */
+/* test aggiunta per far scomparire hamb-menu */
 @media screen and (min-width: 1000px) {
     .hamburger-menu {
         display: none;
